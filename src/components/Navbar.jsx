@@ -7,12 +7,15 @@ const Navbar = () => {
       <div className='w-20 ml-10 mt-2 mb-2 p-0 flex'>
         <img className='rounded-full' src="https://img.freepik.com/premium-vector/hijab-style-fashion-standing-vector-illustration-design_659631-3170.jpg?semt=ais_hybrid" alt="abaya" />
       </div>
-      <ul className='flex justify-between w-1/4 text-2xl text-white font-bold'>
+      <ul className='flex justify-between w-2/4 text-2xl text-white font-bold '>
         <NavLink to={'/'} className='hover:text-amber-300 cursor-pointer'>
         <p>Home</p>
         <hr className='h-[1.5] bg-amber-500 w-2/4 relative left-3' />
         </NavLink>
-        
+        <NavLink to={'/collection'} className='hover:text-amber-300 cursor-pointer'>
+        <p>Collection</p>
+        <hr className='h-[1.5] bg-amber-500 w-2/4 relative left-3' />
+        </NavLink>
         <NavLink to={'/about'} className='hover:text-amber-300 cursor-pointer'>
         <p>About</p>
         <hr className='h-[1.5] bg-amber-500 w-2/4 relative left-3' />
