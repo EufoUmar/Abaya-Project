@@ -1,8 +1,15 @@
 import React from 'react'
+import Login from '../pages/Login'
 import { NavLink } from 'react-router-dom'
 
+
 const Navbar = () => {
+  function loginClicked() {
+    document.querySelector('.absolute').style.display = 'block'
+  }
   return (
+    <>
+    
     <div className='flex justify-between bg-gray-950 items-center top-0.5 h-25 m-0 p-0 sticky' >
       <div className='w-20 ml-10 mt-2 mb-2 p-0 flex'>
         <img className='rounded-full' src="https://img.freepik.com/premium-vector/hijab-style-fashion-standing-vector-illustration-design_659631-3170.jpg?semt=ais_hybrid" alt="abaya" />
@@ -26,10 +33,13 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div>
-      <button className='bg-red-100 mr-3 p-2 pl-3 pr-3  font-bold rounded-2xl border-none cursor-pointer hover:bg-blue-200'>User Login</button>
-      <button className='bg-red-100 mr-3 p-2 pl-3 pr-3 font-bold rounded-2xl border-none cursor-pointer hover:bg-blue-200'>Admin Login</button>
+      <button onClick={loginClicked} className='bg-red-100 mr-3 p-2 pl-3 pr-3  font-bold rounded-2xl border-none cursor-pointer hover:bg-blue-200'>User Login</button>
       </div>
     </div>
+    <div className='absolute hidden w-196'>
+      <Login />
+    </div>
+    </>
   )
 }
 
