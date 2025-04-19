@@ -10,7 +10,7 @@ const Collection = () => {
       <p className='text-white font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit alias voluptatum.</p>
       <div className='text-white mt-3 flex justify-between'>
         <button className='bg-blue-950 font-bold pl-2 pr-2 rounded-full'>Buy Now</button>
-        <span className=' rounded-2xl p-3 capitalize font-bold'> price: 6,000</span>
+        <span className=' rounded-2xl p-3 capitalize font-bold'> price: 5,500</span>
       </div>
       </div>
       <div className='m-5 w-70 bg-pink-700 border-red-500 border-2 rounded-2xl p-5 flex flex-col justify-between items-center'>
