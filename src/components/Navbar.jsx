@@ -1,11 +1,15 @@
 import React from 'react'
 import Login from '../pages/Login'
+import SignUp from '../pages/SignUp'
 import { NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
   function loginClicked() {
     document.querySelector('.absolute').style.display = 'block'
+  }
+  function signUpClicked() {
+    document.querySelector('#signup').style.display = 'block'
   }
   return (
     <>
@@ -33,11 +37,15 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div>
-      <button onClick={loginClicked} className='bg-red-100 mr-3 p-2 pl-3 pr-3  font-bold rounded-2xl border-none cursor-pointer hover:bg-blue-200'>User Login</button>
+      <button onClick={loginClicked} className='bg-red-100 mr-3 p-2 pl-3 pr-3  font-bold rounded-2xl border-none cursor-pointer hover:bg-blue-200'>Login</button>
+      <button onClick={signUpClicked} className='bg-red-100 mr-3 p-2 pl-3 pr-3  font-bold rounded-2xl border-none cursor-pointer hover:bg-blue-200'>SignUp</button>
       </div>
     </div>
     <div className='absolute hidden w-196'>
       <Login />
+    </div>
+    <div id='signup' className='absolute hidden w-196'>
+      <SignUp />
     </div>
     </>
   )
