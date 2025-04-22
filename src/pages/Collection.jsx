@@ -1,14 +1,20 @@
 import React from 'react'
 import Cart from '../components/Cart'
 import Scarf from '../components/Scarf'
+import Chader from '../components/Chader'
 
 const Collection = () => {
+
+  const mixfun = (e) => {
+    const isChecked = true;
+  }
+
   return (
     <div className='w-full flex flex-col justify-center items-center bg-gray-950'>
       <div className='flex justify-center items-center flex-col mt-10 absolute top-10 left-0'>
         <h1 className='text-white p-3 m-4 font-bold text-2xl'>Options</h1>
         <label className='text-amber-50 mb-2 mt-2'>Mix</label>
-        <input defaultChecked type="checkbox" name="abaya"/>
+        <input onClick={mixfun} defaultChecked type="checkbox" name="abaya"/>
         <label className='text-amber-50 mb-2 mt-2'>Abaya</label>
         <input type="checkbox" name="abaya"/>
         <label className='text-amber-50 mb-2 mt-2'>Scarf</label>
@@ -26,6 +32,9 @@ const Collection = () => {
       <Scarf price="250" img="https://www.shutterstock.com/image-vector/muslim-woman-without-face-hijab-260nw-716371624.jpg"/>
       <Scarf price="270" img="https://www.shutterstock.com/image-vector/vector-hijab-red-without-face-260nw-1986906206.jpg"/>
       <Scarf price="310" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRadoVi2kyvTymuEyWKzqlcVTmD7RmMfCzJzT1iNtxtZnKRTZhRunzu0V0qLxK6jqI8Sj4&usqp=CAU"/>
+      <Chader price="2300" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUkStKWL0UhxZtl2zuzOBjfoLni4ljAicP7A&s"/>
+      <Chader price="2500" img="https://abaya.pk/cdn/shop/collections/Chadar.jpg?v=1710159203"/>
+      <Chader price="3000" img="https://5.imimg.com/data5/SELLER/Default/2022/1/AB/TH/KL/78759843/1-3--500x500.jpeg"/>
     </div>
     </div>
   )
